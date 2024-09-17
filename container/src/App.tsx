@@ -2,12 +2,8 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Product from "productsApp/Product";
 import CartItem from "cartApp/CartItem";
-import AuthComponent from "authApp/AuthComponent";
-
 import "./index.css";
-// const AuthComponent = React.lazy(() => import('authApp/AuthComponent'));
-console.log(Product);
-console.log(AuthComponent);
+const AuthComponent = React.lazy(() => import('authApp/AuthComponent'));
 
 
 const App = () => (
